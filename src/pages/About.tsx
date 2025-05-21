@@ -39,14 +39,19 @@ const About = () => {
                   </h3>
                   <div className="space-y-4 text-gray-700">
                     <p>
-                      Curious and driven Junior Software Engineer with a passion for learning and problem-solving,
-                      guided by a deep enthusiasm for technology and a strong belief in creating value through thoughtful, efficient code.
+                      I found my way into development through problem-solving, and the first time I used code to fix something real; it made an immediate impression on me. While studying a programming course at the Open University, I realized that coding gave me practical tools for creating working solutions and solving real-world problems.
                     </p>
                     <p>
-                      I bring positive energy, adaptability, and a self-taught mindset to every challenge balancing academic excellence with real-world impact.
+                      That momentum led me to a student role at a medical startup. I started in QA but ended up building their first testing framework and coding standards within a few weeks. Four months later, I wrote Python full-time, automating labeling workflows and leading development on a real-time BI system. The project was then used to pitch a client renewal, and it became a deciding factor in keeping that relationship going.
                     </p>
                     <p>
-                      I thrive in structured, collaborative environments that enable professional growth and continuous improvement.
+                      Working and studying simultaneously took a toll, so I paused to finish my degree properly. That time gave me a renewed focus when I came back. Since then, I've kept learning with side projects, internal DevOps tools, new languages, and deep dives into unfamiliar tech. At one point, I joined an image-processing course to prepare for a new team at the request of a former manager. I landed the role, and though it was cut before it started, what I'd learned stuck with me.
+                    </p>
+                    <p>
+                      I care about reliable tools and teammates who ask good questions and explain things clearly. I work best when collaboration leads to simple, working solutions, whether I'm debugging with QA or brainstorming with stakeholders. I stay calm under pressure and focus on what helps the people using the product.
+                    </p>
+                    <p>
+                      I look forward to what's next, continuing to learn and build to contribute to a team where I can keep learning and see my work make someone's job, or day, a little easier.
                     </p>
                   </div>
                 </div>

@@ -12,20 +12,13 @@ const AboutSection = () => {
           <CardContent className="p-6 md:p-8">
             <div className="text-center max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 mb-4">
-                Curious and driven Junior Software Engineer with a passion for learning and problem-solving,
+                I found my way into development through problem-solving, and the first time I used code to fix something real; it made an immediate impression on me.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                guided by a deep enthusiasm for technology and a strong belief in creating value
-              </p>
-              <p className="text-lg text-gray-700 mb-4">
-                through thoughtful, efficient code. Brings positive energy, adaptability, and a self-taught
-              </p>
-              <p className="text-lg text-gray-700 mb-4">
-                mindset to every challenge balancing academic excellence with real-world impact.
+                I care about reliable tools and teammates who ask good questions and explain things clearly.
               </p>
               <p className="text-lg text-gray-700">
-                Thrives in structured, collaborative environments that enable professional growth and
-                continuous improvement.
+                I look forward to what's next, continuing to learn and build to contribute to a team where I can keep learning and see my work make someone's job, or day, a little easier.
               </p>
             </div>
           </CardContent>
