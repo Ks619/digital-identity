@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import WorkJourney from "./pages/WorkJourney";
 import HeartDiseaseMl from "./pages/projects/HeartDiseaseMl";
 import LanguageCompiler from "./pages/projects/LanguageCompiler";
 import About from "./pages/About";
@@ -14,6 +13,8 @@ import NotFound from "./pages/NotFound";
 import PythonDataScience from "./pages/courses/PythonDataScience";
 import DevOpsDockerKubernetes from "./pages/courses/DevOpsDockerKubernetes";
 import PythonComputerVision from "./pages/courses/PythonComputerVision";
+import QALead from "./pages/work/QALead";
+import AutomationDeveloper from "./pages/work/AutomationDeveloper";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +26,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/work-journey" element={<WorkJourney />} />
+          <Route path="/work/qa-lead" element={<QALead />} />
+          <Route path="/work/automation-developer" element={<AutomationDeveloper />} />
           <Route path="/projects/heart-disease-ml" element={<HeartDiseaseMl />} />
           <Route path="/projects/language-compiler" element={<LanguageCompiler />} />
           <Route path="/courses/python-data-science" element={<PythonDataScience />} />

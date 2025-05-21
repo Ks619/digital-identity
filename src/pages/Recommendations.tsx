@@ -4,20 +4,8 @@ import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Badge } from '@/components/ui/badge';
 
 const Recommendations = () => {
-  // Function to render rating as text badge
-  const renderRating = (rating: number) => {
-    return (
-      <div className="flex flex-col items-center gap-2">
-        <Badge variant="outline" className="bg-tech-100 text-tech-500 px-3 py-1 text-sm font-medium">
-          Rating: {rating.toFixed(1)}/5
-        </Badge>
-      </div>
-    );
-  };
-
   return (
     <MainLayout>
       <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
@@ -31,9 +19,6 @@ const Recommendations = () => {
         <div className="container mx-auto px-4">
           <Card className="border-none shadow-lg mb-12">
             <CardContent className="p-8">
-              <div className="flex justify-center mb-4">
-                {renderRating(5)}
-              </div>
               <h2 className="text-2xl font-bold text-center mb-6">Yaniv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">
@@ -56,9 +41,6 @@ const Recommendations = () => {
 
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
-              <div className="flex justify-center mb-4">
-                {renderRating(4.5)}
-              </div>
               <h2 className="text-2xl font-bold text-center mb-6">Aviv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">

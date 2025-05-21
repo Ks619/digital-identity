@@ -3,15 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,8 +45,25 @@ const Navbar = () => {
             <li>
               <Link to="/" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Home</Link>
             </li>
-            <li>
-              <Link to="/work-journey" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Work Journey</Link>
+            <li className="relative group hidden md:block">
+              <div className="flex items-center gap-1 text-white hover:text-primary transition-colors duration-300 cursor-pointer">
+                <span>Work Journey</span>
+                <ChevronDown size={16} className="group-hover:rotate-180 transition-all duration-300" />
+              </div>
+              <div className="absolute left-0 top-full mt-1 w-64 bg-white shadow-lg rounded-md overflow-hidden invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <Link to="/work/qa-lead" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                  QA Lead
+                </Link>
+                <Link to="/work/automation-developer" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                  Automation Developer
+                </Link>
+              </div>
+            </li>
+            <li className="md:hidden">
+              <Link to="/work/qa-lead" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>QA Lead</Link>
+            </li>
+            <li className="md:hidden">
+              <Link to="/work/automation-developer" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Automation Developer</Link>
             </li>
             <li className="relative group hidden md:block">
               <div className="flex items-center gap-1 text-white hover:text-primary transition-colors duration-300 cursor-pointer">

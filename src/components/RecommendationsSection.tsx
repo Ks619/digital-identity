@@ -11,28 +11,15 @@ const RecommendationsSection = () => {
       name: "Yaniv",
       title: "Development Team Lead",
       snippet: "כפיר הוא מפתח שאוהב לפתור בעיות - הוא לומד מהר, נגיש למשימה ויצירתי בחשיבה, ותומך אחרים אמיתי.",
-      language: "he",
-      rating: 5
+      language: "he"
     },
     {
       name: "Aviv",
       title: "Development Team Lead",
       snippet: "כפיר היראה לאורך כל הדרך מחויבות גבוהה, סקרנות מקצועית ונכונות לתפתרון בעיות.",
-      language: "he",
-      rating: 4.5
+      language: "he"
     }
   ];
-
-  // Function to render rating as text
-  const renderRating = (rating: number) => {
-    return (
-      <div className="flex items-center">
-        <span className="text-sm font-medium text-tech-500">
-          Rating: {rating.toFixed(1)}/5
-        </span>
-      </div>
-    );
-  };
 
   return (
     <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
@@ -43,10 +30,6 @@ const RecommendationsSection = () => {
           {recommendations.map((recommendation, index) => (
             <Card key={index} className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  {renderRating(recommendation.rating)}
-                </div>
-                
                 <h3 className="text-xl font-bold text-tech-500 mb-1">{recommendation.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{recommendation.title}</p>
                 
