@@ -44,10 +44,10 @@ const Projects = () => {
         </div>
       </div>
 
-      <section className="py-12 bg-white">
+      <section className="py-0 bg-tech-700">
         <div className="container mx-auto px-4">
           {/* Heart Disease ML Project - removed gap */}
-          <div id="heart-disease-ml" ref={heartDiseaseRef} className="mb-16 pt-0 mt-0">
+          <div id="heart-disease-ml" ref={heartDiseaseRef} className="mb-16">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Heart Disease ML (Python)</h2>
@@ -105,8 +105,8 @@ const Projects = () => {
             </Card>
           </div>
           
-          {/* Compiler Project - removed gap */}
-          <div id="compiler" ref={compilerRef} className="mb-8 pt-0 mt-0">
+          {/* Compiler Project */}
+          <div id="compiler" ref={compilerRef} className="mb-8">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">Imaginary Language Compiler (C)</h2>
