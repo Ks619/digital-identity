@@ -1,8 +1,6 @@
-
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
-import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table';
 
@@ -47,8 +45,6 @@ const WorkJourney = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <SectionHeader title="Professional Experience" />
-          
           {/* Company Information */}
           <div className="mb-12">
             <Card className="overflow-hidden shadow-lg">
