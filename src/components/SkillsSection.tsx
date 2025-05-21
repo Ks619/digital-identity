@@ -26,7 +26,7 @@ const TechSkills: string[] = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-5 bg-tech-100/30">
+    <section className="py-8 bg-tech-100/30">
       <div className="container mx-auto px-4">
         <SectionHeader title="Core Competencies" />
         
