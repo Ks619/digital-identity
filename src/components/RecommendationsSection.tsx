@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { Star } from 'lucide-react';
+import { Star, StarHalf, StarOff } from 'lucide-react';
 
 const RecommendationsSection = () => {
   const recommendations = [
@@ -12,15 +12,48 @@ const RecommendationsSection = () => {
       name: "Yaniv",
       title: "Development Team Lead",
       snippet: "כפיר הוא מפתח שאוהב לפתור בעיות - הוא לומד מהר, נגיש למשימה ויצירתי בחשיבה, ותומך אחרים אמיתי.",
-      language: "he"
+      language: "he",
+      rating: 5
     },
     {
       name: "Aviv",
       title: "Development Team Lead",
       snippet: "כפיר היראה לאורך כל הדרך מחויבות גבוהה, סקרנות מקצועית ונכונות לתפתרון בעיות.",
-      language: "he"
+      language: "he",
+      rating: 4.5
     }
   ];
+
+  // Function to render the appropriate star rating
+  const renderStars = (rating: number) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+    
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={`full-${i}`} className="h-5 w-5 fill-amber-400 text-amber-400" />
+      );
+    }
+    
+    // Add half star if needed
+    if (hasHalfStar) {
+      stars.push(
+        <StarHalf key="half" className="h-5 w-5 fill-amber-400 text-amber-400" />
+      );
+    }
+    
+    // Add empty stars
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(
+        <StarOff key={`empty-${i}`} className="h-5 w-5 text-gray-300" />
+      );
+    }
+    
+    return stars;
+  };
 
   return (
     <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
@@ -32,10 +65,8 @@ const RecommendationsSection = () => {
             <Card key={index} className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                    ))}
+                  <div className="flex space-x-1">
+                    {renderStars(recommendation.rating)}
                   </div>
                 </div>
                 

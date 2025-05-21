@@ -4,8 +4,40 @@ import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { Star, StarHalf, StarOff } from 'lucide-react';
 
 const Recommendations = () => {
+  // Function to render the appropriate star rating
+  const renderStars = (rating: number) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+    
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(
+        <Star key={`full-${i}`} className="h-5 w-5 fill-amber-400 text-amber-400" />
+      );
+    }
+    
+    // Add half star if needed
+    if (hasHalfStar) {
+      stars.push(
+        <StarHalf key="half" className="h-5 w-5 fill-amber-400 text-amber-400" />
+      );
+    }
+    
+    // Add empty stars
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(
+        <StarOff key={`empty-${i}`} className="h-5 w-5 text-gray-300" />
+      );
+    }
+    
+    return stars;
+  };
+
   return (
     <MainLayout>
       <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
@@ -19,6 +51,11 @@ const Recommendations = () => {
         <div className="container mx-auto px-4">
           <Card className="border-none shadow-lg mb-12">
             <CardContent className="p-8">
+              <div className="flex justify-center mb-4">
+                <div className="flex space-x-1">
+                  {renderStars(5)}
+                </div>
+              </div>
               <h2 className="text-2xl font-bold text-center mb-6">Yaniv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">
@@ -41,6 +78,11 @@ const Recommendations = () => {
 
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
+              <div className="flex justify-center mb-4">
+                <div className="flex space-x-1">
+                  {renderStars(4.5)}
+                </div>
+              </div>
               <h2 className="text-2xl font-bold text-center mb-6">Aviv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">
