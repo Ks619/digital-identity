@@ -10,7 +10,7 @@ const WorkSection = () => {
       title: 'Automation Developer',
       company: 'Magentiq Eye LTD',
       period: '06/2023-06/2024',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
+      image: '/lovable-uploads/d13f82e7-822e-4e04-b048-bf781448da5c.png',
       clickUrl: '/work-journey#automation-developer'
     },
     {
