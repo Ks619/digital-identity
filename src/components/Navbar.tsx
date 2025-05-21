@@ -57,8 +57,25 @@ const Navbar = () => {
             <li>
               <Link to="/work-journey" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Work Journey</Link>
             </li>
-            <li>
-              <Link to="/projects" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Projects</Link>
+            <li className="relative group hidden md:block">
+              <div className="flex items-center gap-1 text-white hover:text-primary transition-colors duration-300 cursor-pointer">
+                <span>Projects</span>
+                <ChevronDown size={16} className="group-hover:rotate-180 transition-all duration-300" />
+              </div>
+              <div className="absolute left-0 top-full mt-1 w-64 bg-white shadow-lg rounded-md overflow-hidden invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <Link to="/projects/heart-disease-ml" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                  Heart Disease ML (Python)
+                </Link>
+                <Link to="/projects/language-compiler" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
+                  Language Compiler (C)
+                </Link>
+              </div>
+            </li>
+            <li className="md:hidden">
+              <Link to="/projects/heart-disease-ml" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Heart Disease ML (Python)</Link>
+            </li>
+            <li className="md:hidden">
+              <Link to="/projects/language-compiler" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Language Compiler (C)</Link>
             </li>
             <li className="relative group hidden md:block">
               <div className="flex items-center gap-1 text-white hover:text-primary transition-colors duration-300 cursor-pointer">
