@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import WorkJourney from "./pages/WorkJourney";
 import Projects from "./pages/Projects";
+import HeartDiseaseMl from "./pages/projects/HeartDiseaseMl";
+import LanguageCompiler from "./pages/projects/LanguageCompiler";
 import About from "./pages/About";
 import Recommendations from "./pages/Recommendations";
 import NotFound from "./pages/NotFound";
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/work-journey" element={<WorkJourney />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/heart-disease-ml" element={<HeartDiseaseMl />} />
+          <Route path="/projects/language-compiler" element={<LanguageCompiler />} />
           <Route path="/courses/python-data-science" element={<PythonDataScience />} />
           <Route path="/courses/devops-docker-kubernetes" element={<DevOpsDockerKubernetes />} />
           <Route path="/courses/python-computer-vision" element={<PythonComputerVision />} />
