@@ -26,8 +26,9 @@ const Courses = () => {
 
   return (
     <MainLayout>
-      <div className="pt-24 pb-16 bg-tech-700 bg-circuit-pattern bg-cover bg-center bg-no-repeat">
-        <div className="container mx-auto px-4">
+      <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
+        <div className="absolute inset-0 bg-tech-600/80"></div>
+        <div className="container mx-auto z-10 px-4 py-4">
           <h1 className="text-4xl font-bold text-white text-center">Courses & Recommendations</h1>
         </div>
       </div>
