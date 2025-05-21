@@ -106,6 +106,9 @@ const Navbar = () => {
             <li>
               <Link to="/about" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>My Story</Link>
             </li>
+            <li>
+              <Link to="/recommendations" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Recommendations</Link>
+            </li>
           </ul>
         </div>
       </div>
