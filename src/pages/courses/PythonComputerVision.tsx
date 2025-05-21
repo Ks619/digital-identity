@@ -26,22 +26,10 @@ const PythonComputerVision = () => {
                 />
               </div>
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-tech-500 mb-4">Course Overview</h2>
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Summary</h2>
                 <p className="mb-4">
-                  This specialized course explores the fascinating world of computer vision using Python, OpenCV, 
-                  and deep learning frameworks. From image processing basics to advanced neural network models, 
-                  the course provides practical skills for real-world applications.
+                  This course provides a comprehensive introduction to computer vision using Python and OpenCV. It covers essential topics like image processing, video streaming, object detection, face recognition, and deep learning with Keras and TensorFlow. Through hands-on projects, I learned how to manipulate images, analyze video data, and build custom image classifiers using state-of-the-art models like YOLO. The course also included foundational skills with NumPy and explored real-world computer vision applications in modern industries.
                 </p>
-                
-                <h3 className="text-xl font-semibold text-tech-500 mt-6 mb-3">What You'll Learn</h3>
-                <ul className="list-disc pl-5 space-y-2 mb-6">
-                  <li>Image processing fundamentals with OpenCV</li>
-                  <li>Feature detection and object tracking</li>
-                  <li>Face recognition and biometric systems</li>
-                  <li>Convolutional Neural Networks for image classification</li>
-                  <li>Object detection with YOLO and SSD</li>
-                  <li>Image segmentation techniques</li>
-                </ul>
                 
                 <h3 className="text-xl font-semibold text-tech-500 mt-6 mb-3">Course Completion</h3>
                 <p>
@@ -53,11 +41,6 @@ const PythonComputerVision = () => {
             
             <Card className="shadow-lg mb-8">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-tech-500 mb-4">Summary</h2>
-                <p className="mb-6">
-                  This course provides a comprehensive introduction to computer vision using Python and OpenCV. It covers essential topics like image processing, video streaming, object detection, face recognition, and deep learning with Keras and TensorFlow. Through hands-on projects, I learned how to manipulate images, analyze video data, and build custom image classifiers using state-of-the-art models like YOLO. The course also included foundational skills with NumPy and explored real-world computer vision applications in modern industries.
-                </p>
-                
                 <h2 className="text-2xl font-bold text-tech-500 mb-4">Syllabus</h2>
                 
                 <div className="space-y-6">
