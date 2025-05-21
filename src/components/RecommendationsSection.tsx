@@ -4,7 +4,7 @@ import SectionHeader from './SectionHeader';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { Star, StarHalf, StarOff } from 'lucide-react';
+import { ThumbsUp } from 'lucide-react';
 
 const RecommendationsSection = () => {
   const recommendations = [
@@ -24,35 +24,30 @@ const RecommendationsSection = () => {
     }
   ];
 
-  // Function to render the appropriate star rating
-  const renderStars = (rating: number) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
+  // Function to render rating as thumbs up icons
+  const renderRating = (rating: number) => {
+    const maxRating = 5;
+    const filledCount = Math.round(rating);
     
-    // Add full stars
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(
-        <Star key={`full-${i}`} className="h-5 w-5 fill-amber-400 text-amber-400" />
+    const ratingElements = [];
+    
+    for (let i = 0; i < filledCount; i++) {
+      ratingElements.push(
+        <ThumbsUp 
+          key={`filled-${i}`} 
+          className="h-5 w-5 fill-tech-300 text-tech-300" 
+        />
       );
     }
     
-    // Add half star if needed
-    if (hasHalfStar) {
-      stars.push(
-        <StarHalf key="half" className="h-5 w-5 fill-amber-400 text-amber-400" />
-      );
-    }
-    
-    // Add empty stars
-    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-    for (let i = 0; i < emptyStars; i++) {
-      stars.push(
-        <StarOff key={`empty-${i}`} className="h-5 w-5 text-gray-300" />
-      );
-    }
-    
-    return stars;
+    return (
+      <div className="flex items-center gap-1">
+        <div className="flex space-x-1">
+          {ratingElements}
+        </div>
+        <span className="text-xs text-tech-400 ml-2">{rating.toFixed(1)}/5</span>
+      </div>
+    );
   };
 
   return (
@@ -65,9 +60,7 @@ const RecommendationsSection = () => {
             <Card key={index} className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden hover:shadow-xl transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="flex space-x-1">
-                    {renderStars(recommendation.rating)}
-                  </div>
+                  {renderRating(recommendation.rating)}
                 </div>
                 
                 <h3 className="text-xl font-bold text-tech-500 mb-1">{recommendation.name}</h3>

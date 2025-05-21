@@ -4,38 +4,34 @@ import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Star, StarHalf, StarOff } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { ThumbsUp } from 'lucide-react';
 
 const Recommendations = () => {
-  // Function to render the appropriate star rating
-  const renderStars = (rating: number) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
+  // Function to render rating as badges and thumbs up
+  const renderRating = (rating: number) => {
+    const thumbsCount = Math.round(rating);
+    const ratingElements = [];
     
-    // Add full stars
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(
-        <Star key={`full-${i}`} className="h-5 w-5 fill-amber-400 text-amber-400" />
+    for (let i = 0; i < thumbsCount; i++) {
+      ratingElements.push(
+        <ThumbsUp 
+          key={`filled-${i}`} 
+          className="h-6 w-6 fill-tech-300 text-tech-300" 
+        />
       );
     }
     
-    // Add half star if needed
-    if (hasHalfStar) {
-      stars.push(
-        <StarHalf key="half" className="h-5 w-5 fill-amber-400 text-amber-400" />
-      );
-    }
-    
-    // Add empty stars
-    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-    for (let i = 0; i < emptyStars; i++) {
-      stars.push(
-        <StarOff key={`empty-${i}`} className="h-5 w-5 text-gray-300" />
-      );
-    }
-    
-    return stars;
+    return (
+      <div className="flex flex-col items-center gap-2">
+        <Badge variant="outline" className="bg-tech-100 text-tech-500 px-3 py-1 text-sm font-medium">
+          Rating: {rating.toFixed(1)}/5
+        </Badge>
+        <div className="flex space-x-2 mt-2">
+          {ratingElements}
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -52,9 +48,7 @@ const Recommendations = () => {
           <Card className="border-none shadow-lg mb-12">
             <CardContent className="p-8">
               <div className="flex justify-center mb-4">
-                <div className="flex space-x-1">
-                  {renderStars(5)}
-                </div>
+                {renderRating(5)}
               </div>
               <h2 className="text-2xl font-bold text-center mb-6">Yaniv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
@@ -79,9 +73,7 @@ const Recommendations = () => {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <div className="flex justify-center mb-4">
-                <div className="flex space-x-1">
-                  {renderStars(4.5)}
-                </div>
+                {renderRating(4.5)}
               </div>
               <h2 className="text-2xl font-bold text-center mb-6">Aviv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
