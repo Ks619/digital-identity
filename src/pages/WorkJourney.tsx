@@ -18,11 +18,19 @@ const WorkJourney = () => {
         const targetId = location.hash.substring(1); // Remove the # from the hash
         
         if (targetId === 'automation-developer' && automationDeveloperRef.current) {
-          automationDeveloperRef.current.scrollIntoView({ behavior: 'smooth' });
+          // Scroll to the element with offset to make the title visible
+          const yOffset = -120; // Adjust this value to show the title properly
+          const element = automationDeveloperRef.current;
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({top: y, behavior: 'smooth'});
         }
         
         if (targetId === 'qa-lead' && qaLeadRef.current) {
-          qaLeadRef.current.scrollIntoView({ behavior: 'smooth' });
+          // Scroll to the element with offset to make the title visible
+          const yOffset = -120; // Adjust this value to show the title properly
+          const element = qaLeadRef.current;
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({top: y, behavior: 'smooth'});
         }
       }, 100);
     }
@@ -60,7 +68,7 @@ const WorkJourney = () => {
           </div>
           
           {/* Automation Developer Position */}
-          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16">
+          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16 pt-12 -mt-12">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Automation Developer</h2>
@@ -154,7 +162,7 @@ const WorkJourney = () => {
           </div>
           
           {/* QA Lead Position */}
-          <div id="qa-lead" ref={qaLeadRef} className="mb-8">
+          <div id="qa-lead" ref={qaLeadRef} className="mb-8 pt-12 -mt-12">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">QA Lead</h2>
