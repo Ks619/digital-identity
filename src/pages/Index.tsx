@@ -7,13 +7,12 @@ import SkillsSection from '../components/SkillsSection';
 import WorkSection from '../components/WorkSection';
 import ProjectsSection from '../components/ProjectsSection';
 import EducationSection from '../components/EducationSection';
-import ContactSection from '../components/ContactSection';
 import RecommendationsSection from '../components/RecommendationsSection';
 
 const Index = () => {
   return (
     <MainLayout>
-      <Hero profileImage="/lovable-uploads/9f0c6e4e-fcc7-41b9-afec-7bd8e402bc01.png" />
+      <Hero />
       <AboutSection />
       <div className="-mt-8">
         <SkillsSection />
@@ -29,9 +28,6 @@ const Index = () => {
       </div>
       <div className="-mt-8">
         <RecommendationsSection />
-      </div>
-      <div className="-mt-8">
-        <ContactSection />
       </div>
     </MainLayout>
   );
