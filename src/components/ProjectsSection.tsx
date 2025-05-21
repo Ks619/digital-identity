@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-10 bg-white">
+    <section className="py-5 bg-white">
       <div className="container mx-auto px-4">
         <SectionHeader title="Projects" />
         
