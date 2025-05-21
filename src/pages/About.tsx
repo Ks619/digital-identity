@@ -8,15 +8,20 @@ const About = () => {
   return (
     <MainLayout>
       <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
-        <div className="absolute inset-0 bg-tech-600/80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{ backgroundImage: "url('/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png')" }}
+        >
+          <div className="absolute inset-0 bg-tech-600/80"></div>
+        </div>
         <div className="container mx-auto z-10 px-4 py-4">
           <h1 className="text-4xl font-bold text-white text-center">My Story</h1>
         </div>
       </div>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
-          <Card className="border-none shadow-lg bg-white/70 backdrop-blur-sm mb-16">
+          <Card className="border-none shadow-lg mb-16 bg-white/70 backdrop-blur-sm overflow-hidden">
             <CardContent className="p-8">
               <div className="space-y-4 text-gray-700">
                 <p>
