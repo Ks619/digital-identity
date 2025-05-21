@@ -9,7 +9,7 @@ const Courses = () => {
   const courses = [
     {
       title: 'Python for Data Science and Machine Learning Bootcamp',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
       clickUrl: '#'
     },
     {

@@ -20,7 +20,7 @@ const PythonDataScience = () => {
             <Card className="overflow-hidden shadow-lg mb-8">
               <div className="h-64 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
                   alt="Python for Data Science and Machine Learning" 
                   className="w-full h-full object-cover object-center"
                 />
