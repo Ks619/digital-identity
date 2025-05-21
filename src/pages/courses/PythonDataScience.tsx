@@ -50,6 +50,102 @@ const PythonDataScience = () => {
                 </p>
               </CardContent>
             </Card>
+            
+            <Card className="shadow-lg mb-8">
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Summary</h2>
+                <p className="mb-6">
+                  This course provided a hands-on introduction to data science and machine learning using Python. I learned how to analyze and visualize data with libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly. 
+                  The course also covered essential machine learning algorithms, including regression, classification, clustering, natural language processing, neural networks, and deep learning using Scikit-Learn. 
+                  In addition, I explored working with SQL, Excel, and web scraping tools, preparing data pipelines and predictive models for real-world use.
+                </p>
+                
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Syllabus</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Python Programming for Data Science</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Python fundamentals & scripting</li>
+                      <li>Working with Jupyter Notebooks</li>
+                      <li>Functions, loops, conditionals, and file I/O</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Numerical & Data Analysis</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>NumPy – numerical operations and array processing</li>
+                      <li>Pandas – working with DataFrames, cleaning and analyzing data</li>
+                      <li>Handling Excel, CSV, and missing data</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Data Visualization</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Matplotlib – static plotting</li>
+                      <li>Seaborn – statistical visualization</li>
+                      <li>Plotly – interactive visualizations</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Data Sources & Integration</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Web scraping with requests and BeautifulSoup</li>
+                      <li>Connecting Python to SQL databases</li>
+                      <li>Reading Excel and text files</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Machine Learning with Scikit-Learn</h3>
+                    <h4 className="font-medium text-tech-500 mb-1">Supervised learning:</h4>
+                    <ul className="list-disc pl-5 space-y-1 mb-2">
+                      <li>Linear Regression, Logistic Regression</li>
+                      <li>Decision Trees, Random Forests</li>
+                      <li>Support Vector Machines</li>
+                    </ul>
+                    <h4 className="font-medium text-tech-500 mb-1">Unsupervised learning:</h4>
+                    <ul className="list-disc pl-5 space-y-1 mb-2">
+                      <li>K-Means Clustering</li>
+                      <li>PCA for dimensionality reduction</li>
+                    </ul>
+                    <h4 className="font-medium text-tech-500 mb-1">Model evaluation:</h4>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Train/test split, cross-validation</li>
+                      <li>Metrics: accuracy, precision, recall</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Natural Language Processing (NLP)</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Text processing and feature extraction</li>
+                      <li>Spam detection and sentiment analysis</li>
+                      <li>Working with CountVectorizer and TF-IDF</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Neural Networks & Deep Learning</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Basics of deep learning with Keras</li>
+                      <li>Building simple neural networks</li>
+                      <li>Training custom classifiers</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Big Data Tools (Overview)</h3>
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Introduction to Spark for large-scale data processing</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
