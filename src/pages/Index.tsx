@@ -2,6 +2,7 @@
 import React from 'react';
 import MainLayout from '../layout/MainLayout';
 import Hero from '../components/Hero';
+import IntroSection from '../components/IntroSection';
 import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import WorkSection from '../components/WorkSection';
@@ -13,6 +14,7 @@ const Index = () => {
   return (
     <MainLayout>
       <Hero />
+      <IntroSection />
       <AboutSection />
       <SkillsSection />
       <WorkSection />
