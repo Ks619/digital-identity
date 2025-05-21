@@ -65,6 +65,15 @@ const Recommendations = () => {
           </Card>
         </div>
       </section>
+      
+      <section className="py-16 bg-gradient-to-b from-tech-100/30 to-tech-200/30">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-tech-500">Thank You For Your Interest</h2>
+          <p className="max-w-2xl mx-auto text-gray-700">
+            I appreciate your time reading these recommendations. If you would like to learn more about my work experience or discuss potential opportunities, please don't hesitate to reach out.
+          </p>
+        </div>
+      </section>
     </MainLayout>
   );
 };
