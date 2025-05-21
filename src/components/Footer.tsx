@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Connect</h3>
+            <h3 className="text-xl font-bold mb-4">Contact Me</h3>
             <div className="flex gap-4">
               <a 
                 href="https://www.linkedin.com/in/kfir-shuster/" 

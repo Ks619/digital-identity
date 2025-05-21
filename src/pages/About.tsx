@@ -3,7 +3,6 @@ import React from 'react';
 import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
-import ContactSection from '../components/ContactSection';
 
 const About = () => {
   return (
@@ -58,8 +57,6 @@ const About = () => {
           </Card>
         </div>
       </section>
-
-      <ContactSection />
     </MainLayout>
   );
 };
