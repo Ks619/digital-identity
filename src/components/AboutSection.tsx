@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <section className="py-12 bg-gradient-to-b from-white to-tech-100/30">
       <div className="container mx-auto px-4">
-        <SectionHeader title="About me" />
+        <SectionHeader title="My Story" />
         <Card className="border-none shadow-lg bg-white/70 backdrop-blur-sm">
           <CardContent className="p-6 md:p-8">
             <div className="text-center max-w-4xl mx-auto">

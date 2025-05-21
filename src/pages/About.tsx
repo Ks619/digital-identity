@@ -10,7 +10,7 @@ const About = () => {
     <MainLayout>
       <div className="pt-24 pb-16 bg-tech-700 bg-circuit-pattern bg-cover bg-center bg-no-repeat">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold text-white text-center">About Me</h1>
+          <h1 className="text-4xl font-bold text-white text-center">My Story</h1>
         </div>
       </div>
 

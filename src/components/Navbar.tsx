@@ -55,7 +55,7 @@ const Navbar = () => {
               <Link to="/courses" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Courses</Link>
             </li>
             <li>
-              <Link to="/about" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>About</Link>
+              <Link to="/about" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>My Story</Link>
             </li>
           </ul>
         </div>
