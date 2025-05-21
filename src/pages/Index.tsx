@@ -10,7 +10,6 @@ import ProjectsSection from '../components/ProjectsSection';
 import CoursesSection from '../components/CoursesSection';
 import EducationSection from '../components/EducationSection';
 import RecommendationsSection from '../components/RecommendationsSection';
-import ContactSection from '../components/ContactSection';
 import WelcomeDialog from '../components/WelcomeDialog';
 
 const Index = () => {
@@ -40,7 +39,6 @@ const Index = () => {
       <ProjectsSection />
       <CoursesSection />
       <RecommendationsSection />
-      <ContactSection />
     </MainLayout>
   );
 };
