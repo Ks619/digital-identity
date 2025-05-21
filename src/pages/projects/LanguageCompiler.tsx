@@ -16,38 +16,77 @@ const LanguageCompiler = () => {
 
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <Card className="overflow-hidden shadow-lg">
-            <div className="bg-tech-500 text-white p-6">
-              <h2 className="text-2xl font-bold">Imaginary Language Compiler (C)</h2>
-            </div>
-            <div className="aspect-video w-full overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
-                alt="Code on screen representing language compiler project" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <CardContent className="p-6">
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold text-tech-500 mb-4">Project Overview</h3>
-                <p className="text-gray-700 mb-4">
-                  Developed a modular two-pass assembler in C as part of the System Programming Laboratory course at the Open University of Israel. 
-                  The assembler processes simplified assembly language source files, building a symbol table in the first pass and generating machine 
-                  code in the second. This project demonstrates expertise in low-level programming, memory management, and compiler construction principles.
-                </p>
+          <div className="max-w-4xl mx-auto">
+            <Card className="shadow-lg mb-8">
+              <div className="overflow-hidden">
+                <div className="h-64 overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+                    alt="Code on screen representing language compiler project" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold text-tech-500 mb-4">Project Overview</h2>
+                  <p className="mb-6">
+                    Developed a modular two-pass assembler in C as part of the System Programming Laboratory course at the Open University of Israel. 
+                    The assembler processes simplified assembly language source files, building a symbol table in the first pass and generating machine 
+                    code in the second. This project demonstrates expertise in low-level programming, memory management, and compiler construction principles.
+                  </p>
+                  
+                  <h3 className="text-xl font-semibold text-tech-500 mt-6 mb-3">Key Technologies</h3>
+                  <p>
+                    C programming language, UNIX development environment, GNU Make, and data structures including linked lists
+                    were used to create an efficient and robust assembler implementation.
+                  </p>
+                </CardContent>
               </div>
-              
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold text-tech-500 mb-4">Key Features</h3>
-                <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                  <li>Custom implementation of input parsing and linked data structures</li>
-                  <li>Modular C codebase with separate components for each stage</li>
-                  <li>Automated build process using a Makefile</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-tech-500 mb-4">Important Files</h3>
+            </Card>
+            
+            <Card className="shadow-lg mb-8">
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Key Features</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Two-Pass Assembly Architecture</h3>
+                    <p className="text-gray-700">
+                      Implemented a classic two-pass design where the first pass builds symbol tables and 
+                      the second pass generates the machine code.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Custom Data Structures</h3>
+                    <p className="text-gray-700">
+                      Created efficient linked list implementations for storing symbols and instructions,
+                      optimizing memory usage and lookup performance.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Advanced Input Parsing</h3>
+                    <p className="text-gray-700">
+                      Built a robust parsing system to handle complex assembly syntax, comments, and macros
+                      while providing clear error messages for debugging.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-tech-500 mb-2">Automated Build System</h3>
+                    <p className="text-gray-700">
+                      Designed a comprehensive Makefile to automate the build process and manage dependencies,
+                      simplifying compilation across different environments.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="shadow-lg mb-8">
+              <CardContent className="p-6">
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Important Files</h2>
+                
                 <Table>
                   <TableHeader>
                     <TableRow>
@@ -86,9 +125,9 @@ const LanguageCompiler = () => {
                     </TableRow>
                   </TableBody>
                 </Table>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
     </MainLayout>
