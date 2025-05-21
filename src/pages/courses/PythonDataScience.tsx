@@ -26,22 +26,12 @@ const PythonDataScience = () => {
                 />
               </div>
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-tech-500 mb-4">Course Overview</h2>
-                <p className="mb-4">
-                  This comprehensive bootcamp covers all aspects of data analysis, visualization, and machine learning with Python.
-                  From NumPy and Pandas to Scikit-Learn and TensorFlow, this course provides hands-on experience with the most
-                  essential libraries in the data science ecosystem.
+                <h2 className="text-2xl font-bold text-tech-500 mb-4">Summary</h2>
+                <p className="mb-6">
+                  This course provided a hands-on introduction to data science and machine learning using Python. I learned how to analyze and visualize data with libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly. 
+                  The course also covered essential machine learning algorithms, including regression, classification, clustering, natural language processing, neural networks, and deep learning using Scikit-Learn. 
+                  In addition, I explored working with SQL, Excel, and web scraping tools, preparing data pipelines and predictive models for real-world use.
                 </p>
-                
-                <h3 className="text-xl font-semibold text-tech-500 mt-6 mb-3">What You'll Learn</h3>
-                <ul className="list-disc pl-5 space-y-2 mb-6">
-                  <li>Data manipulation with Pandas</li>
-                  <li>Numerical computing with NumPy</li>
-                  <li>Data visualization with Matplotlib and Seaborn</li>
-                  <li>Machine learning algorithms with Scikit-Learn</li>
-                  <li>Deep learning fundamentals with TensorFlow</li>
-                  <li>Real-world data science project workflows</li>
-                </ul>
                 
                 <h3 className="text-xl font-semibold text-tech-500 mt-6 mb-3">Course Completion</h3>
                 <p>
@@ -53,13 +43,6 @@ const PythonDataScience = () => {
             
             <Card className="shadow-lg mb-8">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-tech-500 mb-4">Summary</h2>
-                <p className="mb-6">
-                  This course provided a hands-on introduction to data science and machine learning using Python. I learned how to analyze and visualize data with libraries like Pandas, NumPy, Matplotlib, Seaborn, and Plotly. 
-                  The course also covered essential machine learning algorithms, including regression, classification, clustering, natural language processing, neural networks, and deep learning using Scikit-Learn. 
-                  In addition, I explored working with SQL, Excel, and web scraping tools, preparing data pipelines and predictive models for real-world use.
-                </p>
-                
                 <h2 className="text-2xl font-bold text-tech-500 mb-4">Syllabus</h2>
                 
                 <div className="space-y-6">
