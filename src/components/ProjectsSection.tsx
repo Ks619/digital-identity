@@ -9,13 +9,13 @@ const ProjectsSection = () => {
       title: 'Heart Disease ML (Python)',
       description: 'Developed a machine learning model to predict heart disease risk using health data and statistical analysis.',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      clickUrl: '#'
+      clickUrl: '/projects#heart-disease-ml'
     },
     {
       title: 'Imaginary Language Compiler (C)',
       description: 'Built a compiler to an imaginary assembly language.',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
-      clickUrl: '#'
+      clickUrl: '/projects#compiler'
     }
   ];
 
