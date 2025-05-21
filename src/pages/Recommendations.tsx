@@ -1,3 +1,4 @@
+
 import React from 'react';
 import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
@@ -8,17 +9,22 @@ const Recommendations = () => {
   return (
     <MainLayout>
       <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
-        <div className="absolute inset-0 bg-tech-600/80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center" 
+          style={{ backgroundImage: "url('/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png')" }}
+        >
+          <div className="absolute inset-0 bg-tech-600/80"></div>
+        </div>
         <div className="container mx-auto z-10 px-4 py-4">
           <h1 className="text-4xl font-bold text-white text-center">Recommendation Letters</h1>
         </div>
       </div>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
-          <Card className="border-none shadow-lg mb-12">
+          <Card className="border-none shadow-lg mb-12 bg-white/70 backdrop-blur-sm overflow-hidden">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-center mb-6">Yaniv Development Team Lead</h2>
+              <h2 className="text-2xl font-bold text-center mb-6 text-tech-500">Yaniv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">
                   רציתי לשתף המלצה חמה על כפיר שוסטר, שעבד איתי כשנה. הוא התחיל אצלנו כראש צוות QA, אבל לא לקח הרבה זמן עד שראינו את הפוטנציאל שלו, והוא עבר לתפקיד של מפתח אוטומציות בפייתון.
@@ -38,9 +44,9 @@ const Recommendations = () => {
 
           <Separator className="my-12 max-w-2xl mx-auto" />
 
-          <Card className="border-none shadow-lg">
+          <Card className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-center mb-6">Aviv Development Team Lead</h2>
+              <h2 className="text-2xl font-bold text-center mb-6 text-tech-500">Aviv Development Team Lead</h2>
               <div className="max-w-4xl mx-auto text-right" dir="rtl" lang="he">
                 <p className="mb-4">
                   אני שמחה להמליץ על כפיר שוסטר, שעבד לצידי במשך תקופה משמעותית. בתחילת דרכו בחברה הוא עסק בבדיקות תוכנה, ובהמשך עבר לתפקיד פיתוח, בו עבד תחתיי באופן ישיר כמפתח אוטומציות בשפת פייתון.
