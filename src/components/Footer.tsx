@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,7 +31,7 @@ const Footer = () => {
                 <Link to="/courses" className="text-gray-300 hover:text-white transition-colors">Courses</Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link>
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">My Story</Link>
               </li>
             </ul>
           </div>
@@ -38,9 +39,29 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Connect</h3>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">GitHub</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Email</a>
+              <a 
+                href="https://www.linkedin.com/in/kfir-shuster/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Linkedin size={20} />
+                <span>LinkedIn</span>
+              </a>
+              <a 
+                href="tel:+972584954950" 
+                className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Phone size={20} />
+                <span>Call</span>
+              </a>
+              <a 
+                href="mailto:kfirshuster3@gmail.com" 
+                className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+              >
+                <Mail size={20} />
+                <span>Email</span>
+              </a>
             </div>
           </div>
         </div>
