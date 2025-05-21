@@ -14,21 +14,11 @@ const Index = () => {
     <MainLayout>
       <Hero />
       <AboutSection />
-      <div className="-mt-8">
-        <SkillsSection />
-      </div>
-      <div className="-mt-8">
-        <WorkSection />
-      </div>
-      <div className="-mt-8">
-        <EducationSection />
-      </div>
-      <div className="-mt-8">
-        <ProjectsSection />
-      </div>
-      <div className="-mt-8">
-        <RecommendationsSection />
-      </div>
+      <SkillsSection />
+      <WorkSection />
+      <EducationSection />
+      <ProjectsSection />
+      <RecommendationsSection />
     </MainLayout>
   );
 };
