@@ -13,7 +13,7 @@ import RecommendationsSection from '../components/RecommendationsSection';
 const Index = () => {
   return (
     <MainLayout>
-      <Hero />
+      <Hero title="Welcome to my portfolio" />
       <IntroSection />
       <AboutSection />
       <SkillsSection />
