@@ -17,7 +17,7 @@ const WorkSection = () => {
       title: 'QA Lead',
       company: 'Magentiq Eye LTD',
       period: '02/2023-06/2023',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
+      image: '/lovable-uploads/a5b4f658-beb8-4684-9ad4-cd1a1907ab02.png',
       clickUrl: '/work-journey#qa-lead'
     }
   ];
