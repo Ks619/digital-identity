@@ -45,8 +45,8 @@ const WorkJourney = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          {/* Company Information - reduced top margin */}
-          <div className="mb-12 mt-4">
+          {/* Company Information - minimal top margin */}
+          <div className="mb-12 mt-2">
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold text-center mb-4">About The Company</h2>
@@ -63,8 +63,8 @@ const WorkJourney = () => {
             </Card>
           </div>
           
-          {/* Automation Developer Position */}
-          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16 pt-12 -mt-12">
+          {/* Automation Developer Position - reduced top padding */}
+          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16 pt-4 -mt-4">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Automation Developer</h2>
@@ -157,8 +157,8 @@ const WorkJourney = () => {
             </Card>
           </div>
           
-          {/* QA Lead Position */}
-          <div id="qa-lead" ref={qaLeadRef} className="mb-8 pt-12 -mt-12">
+          {/* QA Lead Position - reduced top padding */}
+          <div id="qa-lead" ref={qaLeadRef} className="mb-8 pt-4 -mt-4">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">QA Lead</h2>
