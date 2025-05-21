@@ -9,6 +9,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
 
 interface WelcomeDialogProps {
   open: boolean;
@@ -18,18 +19,48 @@ interface WelcomeDialogProps {
 const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="text-xl">Welcome to My Portfolio!</DialogTitle>
-          <DialogDescription>
-            Thank you for visiting my personal portfolio website. Feel free to explore my work, skills, and background.
-          </DialogDescription>
-        </DialogHeader>
-        <DialogFooter>
-          <Button onClick={() => onOpenChange(false)}>
-            Explore Portfolio
-          </Button>
-        </DialogFooter>
+      <DialogContent className="sm:max-w-[600px] p-0 overflow-hidden border-none rounded-xl shadow-xl">
+        <div className="relative">
+          {/* Background with gradient overlay */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/lovable-uploads/9f0c6e4e-fcc7-41b9-afec-7bd8e402bc01.png')" }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-tech-600/90 to-tech-500/80"></div>
+          </div>
+          
+          {/* Content */}
+          <div className="relative z-10 p-8">
+            <DialogHeader className="mb-6">
+              <DialogTitle className="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                <Sparkles className="h-6 w-6 text-primary animate-pulse" />
+                Welcome to My Portfolio!
+              </DialogTitle>
+              <DialogDescription className="text-lg text-white/90">
+                Thank you for visiting my personal portfolio website. Here you'll find a showcase of my projects, skills, and professional journey.
+              </DialogDescription>
+            </DialogHeader>
+            
+            <div className="space-y-4 text-white/80 text-md mb-6">
+              <p>Feel free to explore various sections:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>View my professional experience and work history</li>
+                <li>Discover projects I've created and contributed to</li>
+                <li>Learn about my technical skills and expertise</li>
+                <li>Read recommendations from colleagues and clients</li>
+              </ul>
+            </div>
+            
+            <DialogFooter>
+              <Button 
+                onClick={() => onOpenChange(false)} 
+                className="text-base px-8 py-6 h-auto bg-primary hover:bg-primary/80 text-white transition-all duration-300 font-medium"
+              >
+                Explore Portfolio
+              </Button>
+            </DialogFooter>
+          </div>
+        </div>
       </DialogContent>
     </Dialog>
   );
