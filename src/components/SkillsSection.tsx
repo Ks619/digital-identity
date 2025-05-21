@@ -26,11 +26,11 @@ const TechSkills: string[] = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 bg-tech-100/30">
+    <section className="py-12 bg-tech-100/30">
       <div className="container mx-auto px-4">
         <SectionHeader title="Core Competencies" />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {CoreCompetencies.map((skill, index) => (
             <Card key={index} className="border-none shadow hover:shadow-md transition-shadow duration-300 bg-white">
               <CardContent className="p-6">

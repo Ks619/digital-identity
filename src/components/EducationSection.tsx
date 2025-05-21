@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const EducationSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-tech-100/30 to-white">
+    <section className="py-12 bg-gradient-to-b from-tech-100/30 to-white">
       <div className="container mx-auto px-4">
         <SectionHeader title="Education" />
         
