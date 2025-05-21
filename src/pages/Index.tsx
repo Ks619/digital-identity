@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
 import WorkSection from '../components/WorkSection';
 import ProjectsSection from '../components/ProjectsSection';
+import CoursesSection from '../components/CoursesSection';
 import EducationSection from '../components/EducationSection';
 import RecommendationsSection from '../components/RecommendationsSection';
 import WelcomeDialog from '../components/WelcomeDialog';
@@ -36,6 +37,7 @@ const Index = () => {
       <WorkSection />
       <EducationSection />
       <ProjectsSection />
+      <CoursesSection />
       <RecommendationsSection />
     </MainLayout>
   );

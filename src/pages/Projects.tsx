@@ -44,7 +44,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <section className="py-0 bg-tech-700">
+      <section className="py-0 bg-white">
         <div className="container mx-auto px-4">
           {/* Heart Disease ML Project - removed gap */}
           <div id="heart-disease-ml" ref={heartDiseaseRef} className="mb-16">
