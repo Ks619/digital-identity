@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
@@ -64,7 +65,7 @@ const WorkJourney = () => {
           </div>
           
           {/* Automation Developer Position - reduced top padding */}
-          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16 pt-4 -mt-4">
+          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16 pt-2 -mt-2">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Automation Developer</h2>
@@ -158,7 +159,7 @@ const WorkJourney = () => {
           </div>
           
           {/* QA Lead Position - reduced top padding */}
-          <div id="qa-lead" ref={qaLeadRef} className="mb-8 pt-4 -mt-4">
+          <div id="qa-lead" ref={qaLeadRef} className="mb-8 pt-2 -mt-2">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">QA Lead</h2>
