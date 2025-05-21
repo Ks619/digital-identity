@@ -7,10 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import WorkJourney from "./pages/WorkJourney";
 import Projects from "./pages/Projects";
-import Courses from "./pages/Courses";
 import About from "./pages/About";
 import Recommendations from "./pages/Recommendations";
 import NotFound from "./pages/NotFound";
+import PythonDataScience from "./pages/courses/PythonDataScience";
+import DevOpsDockerKubernetes from "./pages/courses/DevOpsDockerKubernetes";
+import PythonComputerVision from "./pages/courses/PythonComputerVision";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +26,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/work-journey" element={<WorkJourney />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/python-data-science" element={<PythonDataScience />} />
+          <Route path="/courses/devops-docker-kubernetes" element={<DevOpsDockerKubernetes />} />
+          <Route path="/courses/python-computer-vision" element={<PythonComputerVision />} />
           <Route path="/about" element={<About />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="*" element={<NotFound />} />

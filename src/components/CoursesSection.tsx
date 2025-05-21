@@ -8,22 +8,22 @@ const CoursesSection = () => {
     {
       title: 'Python for Data Science and Machine Learning Bootcamp',
       image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e',
-      clickUrl: '#'
+      clickUrl: '/courses/python-data-science'
     },
     {
       title: 'Certified DevOps Program: Docker, Kubernetes, and Multi-Cloud Environments',
       image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1',
-      clickUrl: '#'
+      clickUrl: '/courses/devops-docker-kubernetes'
     },
     {
       title: 'Python for Computer Vision with OpenCV and Deep Learning',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7',
-      clickUrl: '#'
+      clickUrl: '/courses/python-computer-vision'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-8 bg-white">
       <div className="container mx-auto px-4">
         <SectionHeader title="Courses" />
         
