@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 interface WorkCardProps {
   title: string;
@@ -10,7 +11,7 @@ interface WorkCardProps {
   clickUrl?: string;
 }
 
-const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image }) => {
+const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image, clickUrl }) => {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full">
       <div className="aspect-video overflow-hidden">
@@ -28,9 +29,15 @@ const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image }) =>
         </div>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <span className="text-primary hover:underline font-medium">
-          View details
-        </span>
+        {clickUrl ? (
+          <Link to={clickUrl} className="text-primary hover:underline font-medium">
+            View details
+          </Link>
+        ) : (
+          <span className="text-primary hover:underline font-medium">
+            View details
+          </span>
+        )}
       </CardFooter>
     </Card>
   );

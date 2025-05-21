@@ -29,15 +29,14 @@ const WorkSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {workExperiences.map((work, index) => (
-            <Link key={index} to={work.clickUrl}>
-              <WorkCard
-                title={work.title}
-                company={work.company}
-                period={work.period}
-                image={work.image}
-                clickUrl={work.clickUrl}
-              />
-            </Link>
+            <WorkCard
+              key={index}
+              title={work.title}
+              company={work.company}
+              period={work.period}
+              image={work.image}
+              clickUrl={work.clickUrl}
+            />
           ))}
         </div>
       </div>
