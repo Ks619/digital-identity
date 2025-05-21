@@ -10,7 +10,7 @@ interface WorkCardProps {
   clickUrl?: string;
 }
 
-const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image, clickUrl }) => {
+const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image }) => {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full">
       <div className="aspect-video overflow-hidden">
