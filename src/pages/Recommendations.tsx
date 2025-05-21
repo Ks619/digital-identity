@@ -5,31 +5,15 @@ import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
-import { ThumbsUp } from 'lucide-react';
 
 const Recommendations = () => {
-  // Function to render rating as badges and thumbs up
+  // Function to render rating as text badge
   const renderRating = (rating: number) => {
-    const thumbsCount = Math.round(rating);
-    const ratingElements = [];
-    
-    for (let i = 0; i < thumbsCount; i++) {
-      ratingElements.push(
-        <ThumbsUp 
-          key={`filled-${i}`} 
-          className="h-6 w-6 fill-tech-300 text-tech-300" 
-        />
-      );
-    }
-    
     return (
       <div className="flex flex-col items-center gap-2">
         <Badge variant="outline" className="bg-tech-100 text-tech-500 px-3 py-1 text-sm font-medium">
           Rating: {rating.toFixed(1)}/5
         </Badge>
-        <div className="flex space-x-2 mt-2">
-          {ratingElements}
-        </div>
       </div>
     );
   };

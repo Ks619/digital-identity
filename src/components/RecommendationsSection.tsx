@@ -4,7 +4,6 @@ import SectionHeader from './SectionHeader';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
-import { ThumbsUp } from 'lucide-react';
 
 const RecommendationsSection = () => {
   const recommendations = [
@@ -24,28 +23,13 @@ const RecommendationsSection = () => {
     }
   ];
 
-  // Function to render rating as thumbs up icons
+  // Function to render rating as text
   const renderRating = (rating: number) => {
-    const maxRating = 5;
-    const filledCount = Math.round(rating);
-    
-    const ratingElements = [];
-    
-    for (let i = 0; i < filledCount; i++) {
-      ratingElements.push(
-        <ThumbsUp 
-          key={`filled-${i}`} 
-          className="h-5 w-5 fill-tech-300 text-tech-300" 
-        />
-      );
-    }
-    
     return (
-      <div className="flex items-center gap-1">
-        <div className="flex space-x-1">
-          {ratingElements}
-        </div>
-        <span className="text-xs text-tech-400 ml-2">{rating.toFixed(1)}/5</span>
+      <div className="flex items-center">
+        <span className="text-sm font-medium text-tech-500">
+          Rating: {rating.toFixed(1)}/5
+        </span>
       </div>
     );
   };
