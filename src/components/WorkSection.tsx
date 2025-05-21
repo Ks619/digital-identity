@@ -2,7 +2,6 @@
 import React from 'react';
 import WorkCard from './WorkCard';
 import SectionHeader from './SectionHeader';
-import { Link } from 'react-router-dom';
 
 const WorkSection = () => {
   const workExperiences = [

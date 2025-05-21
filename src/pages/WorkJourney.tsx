@@ -1,11 +1,33 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table';
 
 const WorkJourney = () => {
+  const location = useLocation();
+  const automationDeveloperRef = useRef<HTMLDivElement>(null);
+  const qaLeadRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Check if there's a hash in the URL and scroll to the corresponding section
+    if (location.hash) {
+      setTimeout(() => {
+        const targetId = location.hash.substring(1); // Remove the # from the hash
+        
+        if (targetId === 'automation-developer' && automationDeveloperRef.current) {
+          automationDeveloperRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        if (targetId === 'qa-lead' && qaLeadRef.current) {
+          qaLeadRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <MainLayout>
       <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
@@ -38,9 +60,9 @@ const WorkJourney = () => {
           </div>
           
           {/* Automation Developer Position */}
-          <div id="automation-developer" className="mb-16">
+          <div id="automation-developer" ref={automationDeveloperRef} className="mb-16">
             <Card className="overflow-hidden shadow-lg">
-              <div className="bg-tech-500 text-white p-6">
+              <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Automation Developer</h2>
                 <p className="text-lg">Magentiq Eye LTD | 06/2023-06/2024</p>
               </div>
@@ -132,7 +154,7 @@ const WorkJourney = () => {
           </div>
           
           {/* QA Lead Position */}
-          <div id="qa-lead" className="mb-8">
+          <div id="qa-lead" ref={qaLeadRef} className="mb-8">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">QA Lead</h2>
