@@ -2,6 +2,7 @@
 import React from 'react';
 import WorkCard from './WorkCard';
 import SectionHeader from './SectionHeader';
+import { Link } from 'react-router-dom';
 
 const WorkSection = () => {
   const workExperiences = [
@@ -10,14 +11,14 @@ const WorkSection = () => {
       company: 'Magentiq Eye LTD',
       period: '06/2023-06/2024',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
-      clickUrl: '#'
+      clickUrl: '/work-journey#automation-developer'
     },
     {
       title: 'QA Lead',
       company: 'Magentiq Eye LTD',
       period: '02/2023-06/2023',
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
-      clickUrl: '#'
+      clickUrl: '/work-journey#qa-lead'
     }
   ];
 
@@ -28,14 +29,15 @@ const WorkSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {workExperiences.map((work, index) => (
-            <WorkCard
-              key={index}
-              title={work.title}
-              company={work.company}
-              period={work.period}
-              image={work.image}
-              clickUrl={work.clickUrl}
-            />
+            <Link key={index} to={work.clickUrl}>
+              <WorkCard
+                title={work.title}
+                company={work.company}
+                period={work.period}
+                image={work.image}
+                clickUrl={work.clickUrl}
+              />
+            </Link>
           ))}
         </div>
       </div>

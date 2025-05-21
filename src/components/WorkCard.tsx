@@ -27,16 +27,11 @@ const WorkCard: React.FC<WorkCardProps> = ({ title, company, period, image, clic
           <p className="text-sm">{period}</p>
         </div>
       </CardContent>
-      {clickUrl && (
-        <CardFooter className="p-6 pt-0">
-          <a 
-            href={clickUrl} 
-            className="text-primary hover:underline font-medium"
-          >
-            For more information, click here
-          </a>
-        </CardFooter>
-      )}
+      <CardFooter className="p-6 pt-0">
+        <span className="text-primary hover:underline font-medium">
+          View details
+        </span>
+      </CardFooter>
     </Card>
   );
 };
