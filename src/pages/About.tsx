@@ -19,8 +19,8 @@ const About = () => {
         </div>
       </div>
 
-      {/* Reduced the py-16 (padding-top and padding-bottom) to py-8 to make the gap smaller */}
-      <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
+      {/* Reduced the padding from py-8 to py-4 to make the gap even smaller */}
+      <section className="py-4 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
           <Card className="border-none shadow-lg mb-16 bg-white/70 backdrop-blur-sm overflow-hidden">
             <CardContent className="p-8">
