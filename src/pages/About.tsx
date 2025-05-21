@@ -2,8 +2,6 @@
 import React from 'react';
 import MainLayout from '../layout/MainLayout';
 import SectionHeader from '../components/SectionHeader';
-import SkillsSection from '../components/SkillsSection';
-import EducationSection from '../components/EducationSection';
 import { Card, CardContent } from '@/components/ui/card';
 import ContactSection from '../components/ContactSection';
 
@@ -61,8 +59,6 @@ const About = () => {
         </div>
       </section>
 
-      <SkillsSection />
-      <EducationSection />
       <ContactSection />
     </MainLayout>
   );
