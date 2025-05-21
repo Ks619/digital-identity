@@ -20,6 +20,13 @@ const LanguageCompiler = () => {
             <div className="bg-tech-500 text-white p-6">
               <h2 className="text-2xl font-bold">Imaginary Language Compiler (C)</h2>
             </div>
+            <div className="aspect-video w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+                alt="Code on screen representing language compiler project" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardContent className="p-6">
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-tech-500 mb-4">Project Overview</h3>

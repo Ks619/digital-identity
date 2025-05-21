@@ -20,6 +20,13 @@ const HeartDiseaseMl = () => {
             <div className="bg-[#1e2938] text-white p-6">
               <h2 className="text-2xl font-bold">Heart Disease ML (Python)</h2>
             </div>
+            <div className="aspect-video w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" 
+                alt="Data visualization representing heart disease machine learning project" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardContent className="p-6">
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-tech-500 mb-4">Project Overview</h3>
