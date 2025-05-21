@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
@@ -46,8 +45,8 @@ const WorkJourney = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          {/* Company Information - increased top margin */}
-          <div className="mb-12 mt-8">
+          {/* Company Information - reduced top margin */}
+          <div className="mb-12 mt-4">
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold text-center mb-4">About The Company</h2>

@@ -45,8 +45,8 @@ const Projects = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          {/* Heart Disease ML Project */}
-          <div id="heart-disease-ml" ref={heartDiseaseRef} className="mb-16 pt-12 -mt-12">
+          {/* Heart Disease ML Project - reduced top margin */}
+          <div id="heart-disease-ml" ref={heartDiseaseRef} className="mb-16 pt-8 -mt-8">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-[#1e2938] text-white p-6">
                 <h2 className="text-2xl font-bold">Heart Disease ML (Python)</h2>
@@ -104,8 +104,8 @@ const Projects = () => {
             </Card>
           </div>
           
-          {/* Compiler Project */}
-          <div id="compiler" ref={compilerRef} className="mb-8 pt-12 -mt-12">
+          {/* Compiler Project - reduced top margin */}
+          <div id="compiler" ref={compilerRef} className="mb-8 pt-8 -mt-8">
             <Card className="overflow-hidden shadow-lg">
               <div className="bg-tech-500 text-white p-6">
                 <h2 className="text-2xl font-bold">Imaginary Language Compiler (C)</h2>
