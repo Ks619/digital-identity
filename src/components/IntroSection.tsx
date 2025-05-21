@@ -3,7 +3,7 @@ import React from 'react';
 
 const IntroSection = () => {
   return (
-    <section className="py-16 bg-tech-100/30">
+    <section className="py-10 bg-tech-100/30">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center justify-center gap-8">
           <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-tech-500 shadow-xl">
