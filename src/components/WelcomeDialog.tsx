@@ -5,10 +5,10 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Sparkles } from "lucide-react";
 
 interface WelcomeDialogProps {
@@ -19,7 +19,7 @@ interface WelcomeDialogProps {
 const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[600px] p-0 overflow-hidden border-none rounded-xl shadow-xl">
+      <DialogContent className="sm:max-w-[700px] p-0 overflow-hidden border-none rounded-xl shadow-xl">
         <div className="relative">
           {/* Background with gradient overlay */}
           <div 
@@ -30,35 +30,32 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
           </div>
           
           {/* Content */}
-          <div className="relative z-10 p-8">
-            <DialogHeader className="mb-6">
-              <DialogTitle className="text-3xl font-bold text-white mb-2 flex items-center gap-2">
-                <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-                Welcome to My Portfolio!
-              </DialogTitle>
-              <DialogDescription className="text-lg text-white/90">
-                Thank you for visiting my personal portfolio website. Here you'll find a showcase of my projects, skills, and professional journey.
-              </DialogDescription>
-            </DialogHeader>
+          <div className="relative z-10 p-8 flex flex-col items-center md:flex-row md:items-start gap-6">
+            <Avatar className="h-32 w-32 border-4 border-white/20">
+              <AvatarImage src="/lovable-uploads/a647c2dd-f9c1-4fb9-9379-8ab0edf3185a.png" alt="Kfir Shuster" />
+              <AvatarFallback>KS</AvatarFallback>
+            </Avatar>
             
-            <div className="space-y-4 text-white/80 text-md mb-6">
-              <p>Feel free to explore various sections:</p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>View my professional experience and work history</li>
-                <li>Discover projects I've created and contributed to</li>
-                <li>Learn about my technical skills and expertise</li>
-                <li>Read recommendations from colleagues and clients</li>
-              </ul>
+            <div className="flex-1 md:ml-2">
+              <DialogHeader className="mb-4">
+                <DialogTitle className="text-3xl font-bold text-white mb-2 flex items-center gap-2">
+                  <Sparkles className="h-6 w-6 text-primary animate-pulse" />
+                  Welcome to My Portfolio!
+                </DialogTitle>
+                <h2 className="text-xl text-primary font-medium">
+                  Junior Software Engineer
+                </h2>
+              </DialogHeader>
+              
+              <DialogFooter className="mt-6">
+                <Button 
+                  onClick={() => onOpenChange(false)} 
+                  className="text-base px-8 py-6 h-auto bg-primary hover:bg-primary/80 text-white transition-all duration-300 font-medium"
+                >
+                  Explore Portfolio
+                </Button>
+              </DialogFooter>
             </div>
-            
-            <DialogFooter>
-              <Button 
-                onClick={() => onOpenChange(false)} 
-                className="text-base px-8 py-6 h-auto bg-primary hover:bg-primary/80 text-white transition-all duration-300 font-medium"
-              >
-                Explore Portfolio
-              </Button>
-            </DialogFooter>
           </div>
         </div>
       </DialogContent>
