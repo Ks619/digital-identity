@@ -50,17 +50,20 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
             <DialogHeader className="mb-4">
               <DialogTitle className="text-3xl font-bold text-white mb-2 flex items-center justify-center gap-2">
                 <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-                Kfir Shuster
+                Hi, Welcome to my portfolio
               </DialogTitle>
               <h2 className="text-xl text-primary font-medium">
-                Junior Software Engineer
+                Kfir Shuster
               </h2>
+              <h3 className="text-lg text-primary font-medium mt-1">
+                Junior Software Engineer
+              </h3>
             </DialogHeader>
             
             <DialogFooter className="mt-6 flex justify-center w-full">
               <Button 
                 onClick={() => onOpenChange(false)} 
-                className="text-base px-8 py-6 h-auto bg-primary hover:bg-primary/80 text-white transition-all duration-300 font-medium"
+                className="text-base px-8 py-6 h-auto bg-primary hover:bg-primary/80 text-white transition-all duration-300 font-medium hover:scale-110"
               >
                 Explore Portfolio
               </Button>
