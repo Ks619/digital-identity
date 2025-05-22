@@ -56,7 +56,7 @@ const SkillsSection = () => {
               {TechSkills.map((skill, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 bg-tech-200 text-tech-500 rounded-full text-sm font-medium"
+                  className="px-4 py-2 bg-tech-200 text-tech-500 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200"
                 >
                   {skill}
                 </span>

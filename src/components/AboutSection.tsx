@@ -8,7 +8,7 @@ const AboutSection = () => {
     <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
       <div className="container mx-auto px-4">
         <SectionHeader title="About Me" className="mb-6" />
-        <Card className="border-none shadow-lg bg-white/70 backdrop-blur-sm">
+        <Card className="border-none shadow-lg bg-white/70 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
           <CardContent className="p-6 md:p-8">
             <div className="text-center max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 mb-4">

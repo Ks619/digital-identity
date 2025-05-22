@@ -9,7 +9,7 @@ const EducationSection = () => {
       <div className="container mx-auto px-4">
         <SectionHeader title="Education" />
         
-        <Card className="border-none shadow-lg mx-auto max-w-2xl">
+        <Card className="border-none shadow-lg mx-auto max-w-2xl hover:scale-105 transition-transform duration-300">
           <CardContent className="p-8">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-tech-500 mb-2">BSc in Computer Science</h3>
