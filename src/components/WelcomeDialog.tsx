@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -16,9 +16,17 @@ interface WelcomeDialogProps {
 }
 
 const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => {
+  const [isHovering, setIsHovering] = useState(false);
+  
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[700px] p-0 overflow-hidden border-none rounded-xl shadow-xl">
+      <DialogContent 
+        className={`p-0 overflow-hidden border-none rounded-xl shadow-xl transition-all duration-300 ease-in-out ${
+          isHovering ? 'sm:max-w-[800px]' : 'sm:max-w-[700px]'
+        }`}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <div className="border-8 border-white">
           {/* Background with gradient overlay */}
           <div 
@@ -42,7 +50,7 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
             <DialogHeader className="mb-4">
               <DialogTitle className="text-3xl font-bold text-white mb-2 flex items-center justify-center gap-2">
                 <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-                Welcome to My Portfolio!
+                Kfir Shuster
               </DialogTitle>
               <h2 className="text-xl text-primary font-medium">
                 Junior Software Engineer
