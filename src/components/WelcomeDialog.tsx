@@ -23,7 +23,7 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
           {/* Background with gradient overlay */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/lovable-uploads/9f0c6e4e-fcc7-41b9-afec-7bd8e402bc01.png')" }}
+            style={{ backgroundImage: "url('/lovable-uploads/dfd4d879-0d56-4702-865e-92a31a874ae7.png')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-tech-600/90 to-tech-500/80"></div>
           </div>
