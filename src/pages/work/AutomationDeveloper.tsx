@@ -1,18 +1,13 @@
-
 import React from 'react';
 import MainLayout from '../../layout/MainLayout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from '@/components/ui/table';
+import Hero from '../../components/Hero';
 
 const AutomationDeveloper = () => {
   return (
     <MainLayout>
-      <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
-        <div className="absolute inset-0 bg-tech-600/80"></div>
-        <div className="container mx-auto z-10 px-4 py-4">
-          <h1 className="text-4xl font-bold text-white text-center">Magentiq Eye LTD | 06/2023-06/2024</h1>
-        </div>
-      </div>
+      <Hero title="Automation Developer" />
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -20,7 +15,7 @@ const AutomationDeveloper = () => {
           <div className="mb-12">
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-center mb-4">About The Company</h2>
+                <h2 className="text-2xl font-bold text-white text-center">Magentiq Eye LTD | 06/2023-06/2024</h2>
                 <p className="text-gray-700 text-center mb-4">
                   Magentiq Eye is an Israeli medical device company specializing in AI-powered solutions designed to enhance the performance of endoscopic procedures, with a focus on gastroenterology.
                 </p>

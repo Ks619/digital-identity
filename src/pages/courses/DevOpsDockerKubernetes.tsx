@@ -1,18 +1,13 @@
-
 import React from 'react';
 import MainLayout from '../../layout/MainLayout';
 import SectionHeader from '../../components/SectionHeader';
 import { Card, CardContent } from '@/components/ui/card';
+import Hero from '../../components/Hero';
 
 const DevOpsDockerKubernetes = () => {
   return (
     <MainLayout>
-      <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
-        <div className="absolute inset-0 bg-tech-600/80"></div>
-        <div className="container mx-auto z-10 px-4 py-4">
-          <h1 className="text-4xl font-bold text-white text-center">DevOps: Docker, Kubernetes, and Multi-Cloud</h1>
-        </div>
-      </div>
+      <Hero title="DevOps: Docker, Kubernetes, and Multi-Cloud" />
 
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
