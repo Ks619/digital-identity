@@ -75,7 +75,7 @@ const Navbar = () => {
                   Heart Disease ML (Python)
                 </Link>
                 <Link to="/projects/language-compiler" className="block px-4 py-2 hover:bg-gray-100 text-gray-800">
-                  Language Compiler (C)
+                  Imaginary Language Compiler (C)
                 </Link>
               </div>
             </li>
@@ -83,7 +83,7 @@ const Navbar = () => {
               <Link to="/projects/heart-disease-ml" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Heart Disease ML (Python)</Link>
             </li>
             <li className="md:hidden">
-              <Link to="/projects/language-compiler" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Language Compiler (C)</Link>
+              <Link to="/projects/language-compiler" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Imaginary Language Compiler (C)</Link>
             </li>
             <li className="relative group hidden md:block">
               <div className="flex items-center gap-1 text-white hover:text-primary transition-colors duration-300 cursor-pointer">
@@ -112,10 +112,10 @@ const Navbar = () => {
               <Link to="/courses/python-computer-vision" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Python for Computer Vision</Link>
             </li>
             <li>
-              <Link to="/about" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>My Story</Link>
+              <Link to="/recommendations" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Recommendations</Link>
             </li>
             <li>
-              <Link to="/recommendations" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>Recommendations</Link>
+              <Link to="/about" className="text-white hover:text-primary transition-colors duration-300" onClick={closeMenu}>My Story</Link>
             </li>
           </ul>
         </div>

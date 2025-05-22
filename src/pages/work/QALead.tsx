@@ -1,3 +1,4 @@
+
 import React from 'react';
 import MainLayout from '../../layout/MainLayout';
 import Hero from '../../components/Hero';
@@ -74,7 +75,7 @@ const QALead = () => {
                       </TableRow>
                       <TableRow>
                         <TableCell className="font-medium">Tools</TableCell>
-                        <TableCell>JIRA, Confluence, TestRail</TableCell>
+                        <TableCell>JIRA, Miro</TableCell>
                       </TableRow>
                       <TableRow>
                         <TableCell className="font-medium">Management</TableCell>
