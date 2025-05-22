@@ -1,24 +1,14 @@
 
 import React from 'react';
 import MainLayout from '../layout/MainLayout';
-import SectionHeader from '../components/SectionHeader';
+import Hero from '../components/Hero';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
 const Recommendations = () => {
   return (
     <MainLayout>
-      <div className="min-h-[15vh] relative flex items-center justify-center bg-tech-700">
-        <div 
-          className="absolute inset-0 bg-cover bg-center" 
-          style={{ backgroundImage: "url('/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png')" }}
-        >
-          <div className="absolute inset-0 bg-tech-600/80"></div>
-        </div>
-        <div className="container mx-auto z-10 px-4 py-4">
-          <h1 className="text-4xl font-bold text-white text-center">Recommendation Letters</h1>
-        </div>
-      </div>
+      <Hero title="Recommendation Letters" />
 
       <section className="py-16 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
