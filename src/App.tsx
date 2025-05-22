@@ -23,7 +23,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/digital-identity">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work/qa-lead" element={<QALead />} />
