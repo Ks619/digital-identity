@@ -52,10 +52,10 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
                 <Sparkles className="h-6 w-6 text-primary animate-pulse" />
                 Hi, Welcome to my portfolio
               </DialogTitle>
-              <h2 className="text-xl text-primary font-medium">
+              <h2 className="text-2xl text-[#33C3F0] font-semibold">
                 Kfir Shuster
               </h2>
-              <h3 className="text-lg text-primary font-medium mt-1">
+              <h3 className="text-xl text-primary font-medium mt-1">
                 Junior Software Engineer
               </h3>
             </DialogHeader>
