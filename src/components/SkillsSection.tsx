@@ -21,7 +21,7 @@ const CoreCompetencies: Skill[] = [
 const TechSkills: string[] = [
   'Python', 'Java', 'C', 'C++', 'HTML', 'SQL', 'NoSQL', 'Linux', 'HTTP', 
   'TCP/IP', 'DNS', 'GitHub', 'AWS', 'Azure', 'GCP', 'Docker', 'Kubernetes',
-  'Microservices', 'Terraform', 'Jenkins', 'CI/CD', 'Data visualization tools'
+  'Microservices', 'Terraform', 'Jenkins', 'CI/CD', 'Data visualization tools', 'Jira'
 ];
 
 const SkillsSection = () => {
@@ -32,7 +32,10 @@ const SkillsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {CoreCompetencies.map((skill, index) => (
-            <Card key={index} className="border-none shadow hover:shadow-md transition-shadow duration-300 bg-white">
+            <Card 
+              key={index} 
+              className="border-none shadow hover:shadow-md transition-all duration-300 bg-white hover:scale-105 hover:shadow-lg"
+            >
               <CardContent className="p-6">
                 <div className="flex items-center justify-center h-full">
                   <div className="text-center">

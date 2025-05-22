@@ -28,7 +28,10 @@ const RecommendationsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {recommendations.map((recommendation, index) => (
-            <Card key={index} className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden hover:shadow-xl transition-all duration-300">
+            <Card 
+              key={index} 
+              className="border-none shadow-lg bg-white/70 backdrop-blur-sm overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-tech-500 mb-1">{recommendation.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{recommendation.title}</p>
