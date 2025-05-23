@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({
   backgroundImage = "/digital-identity/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png"
 }) => {
   return (
-    <div className="min-h-[15vh] relative flex items-center justify-center">
+    <div className="min-h-[30vh] relative flex items-center justify-center">
       <div 
         className="absolute inset-0 bg-cover bg-center" 
         style={{ backgroundImage: `url('${backgroundImage}')` }}
