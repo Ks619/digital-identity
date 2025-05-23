@@ -15,7 +15,7 @@ const AutomationDeveloper = () => {
           <div className="mb-12">
             <Card className="overflow-hidden shadow-lg">
               <CardContent className="p-6">
-                <h2 className="text-2xl font-bold text-white text-center">Magentiq Eye LTD | 06/2023-06/2024</h2>
+                <h2 className="text-2xl font-bold text-center mb-4">About The Company</h2>
                 <p className="text-gray-700 text-center mb-4">
                   Magentiq Eye is an Israeli medical device company specializing in AI-powered solutions designed to enhance the performance of endoscopic procedures, with a focus on gastroenterology.
                 </p>
