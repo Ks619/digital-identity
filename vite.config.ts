@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
           dest: ''
         },
         {
-          src: 'public/lovable-uploads',     // ✅ This is the missing piece
+          src: 'public/lovable-uploads',     
           dest: 'lovable-uploads'
         }
       ]

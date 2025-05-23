@@ -10,7 +10,7 @@ const QALead = () => {
     <MainLayout>
       <Hero title="QA Lead" />
 
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
           {/* Company Information */}
           <div className="mb-12">

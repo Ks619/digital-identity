@@ -9,7 +9,7 @@ const PythonComputerVision = () => {
     <MainLayout>
       <Hero title="Python for Computer Vision with OpenCV" />
 
-      <section className="py-8 bg-white">
+      <section className="py-8 bg-gradient-to-b from-white to-tech-100/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="overflow-hidden shadow-lg mb-8">
