@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ 
   title,
   subtitle,
-  backgroundImage = "/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png"
+  backgroundImage = "/digital-identity/lovable-uploads/87e4de3b-ea7a-4c20-8117-4e048a051f7f.png"
 }) => {
   return (
     <div className="min-h-[15vh] relative flex items-center justify-center">
