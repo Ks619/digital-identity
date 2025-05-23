@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import { viteStaticCopy } from 'vite-plugin-static-copy'; // ← Add this
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig(({ mode }) => ({
   base: "/digital-identity/",
@@ -13,11 +13,15 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
-    viteStaticCopy({                     // ← Add this block
+    viteStaticCopy({
       targets: [
         {
           src: 'public/404.html',
           dest: ''
+        },
+        {
+          src: 'public/lovable-uploads',     // ✅ This is the missing piece
+          dest: 'lovable-uploads'
         }
       ]
     })
