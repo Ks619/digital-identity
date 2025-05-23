@@ -31,7 +31,7 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
           {/* Background with gradient overlay */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: "url('/lovable-uploads/dfd4d879-0d56-4702-865e-92a31a874ae7.png')" }}
+            style={{ backgroundImage: "url('/digital-identity/lovable-uploads/dfd4d879-0d56-4702-865e-92a31a874ae7.png')" }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-tech-600/90 to-tech-500/80"></div>
           </div>
@@ -41,7 +41,7 @@ const WelcomeDialog: React.FC<WelcomeDialogProps> = ({ open, onOpenChange }) => 
             {/* Centered image with white border */}
             <div className="mb-6 w-48 h-48 overflow-hidden mx-auto border-4 border-white">
               <img 
-                src="/lovable-uploads/a647c2dd-f9c1-4fb9-9379-8ab0edf3185a.png" 
+                src="/digital-identity/lovable-uploads/a647c2dd-f9c1-4fb9-9379-8ab0edf3185a.png" 
                 alt="Kfir Shuster" 
                 className="w-full h-full object-cover"
               />
