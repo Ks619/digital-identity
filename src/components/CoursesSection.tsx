@@ -7,7 +7,7 @@ const CoursesSection = () => {
   const courses = [
     {
       title: 'Python for Data Science and Machine Learning Bootcamp',
-      image: '/digital-identity/public/lovable-uploads/d0a2b38f-39fd-4dd7-8126-abc2b97d6da0.png',
+      image: '/digital-identity/lovable-uploads/d0a2b38f-39fd-4dd7-8126-abc2b97d6da0.png',
       clickUrl: '/courses/python-data-science'
     },
     {
