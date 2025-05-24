@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 interface CourseCardProps {
   title: string;
@@ -21,16 +22,15 @@ const CourseCard: React.FC<CourseCardProps> = ({ title, image, clickUrl }) => {
       <CardContent className="p-6">
         <h3 className="text-xl font-bold text-tech-500 mb-2">{title}</h3>
         
-        {clickUrl && (
-          <div className="mt-4">
-            <a 
-              href={clickUrl} 
-              className="text-primary hover:underline font-medium"
-            >
-              For more details, click here
-            </a>
-          </div>
-        )}
+        {clickUrl ? (
+          <Link to={clickUrl} className="text-primary hover:underline font-medium">
+            View details
+          </Link>
+        ) : (
+          <span className="text-primary hover:underline font-medium">
+            View details
+          </span>
+                )}
       </CardContent>
     </Card>
   );

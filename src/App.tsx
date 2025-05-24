@@ -1,9 +1,11 @@
-
+import React from 'react';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+
 import Index from "./pages/Index";
 import HeartDiseaseMl from "./pages/projects/HeartDiseaseMl";
 import LanguageCompiler from "./pages/projects/LanguageCompiler";
@@ -24,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/digital-identity">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work/qa-lead" element={<QALead />} />

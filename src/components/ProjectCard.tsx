@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   title: string;
@@ -23,16 +24,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, cl
         <h3 className="text-xl font-bold text-tech-500 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
         
-        {clickUrl && (
-          <div className="mt-4">
-            <a 
-              href={clickUrl} 
-              className="text-primary hover:underline font-medium"
-            >
-              View project details
-            </a>
-          </div>
-        )}
+        {clickUrl ? (
+          <Link to={clickUrl} className="text-primary hover:underline font-medium">
+            View details
+          </Link>
+        ) : (
+          <span className="text-primary hover:underline font-medium">
+            View details
+          </span>
+                )}
       </CardContent>
     </Card>
   );
