@@ -17,14 +17,14 @@ const Index = () => {
   
   useEffect(() => {
     // Show the welcome dialog when the component mounts
-    setShowWelcome(true);
+    // setShowWelcome(true);
     
     // You could add logic here to only show it once using localStorage
-    // const hasSeenWelcome = localStorage.getItem('hasSeenWelcome');
-    // if (!hasSeenWelcome) {
-    //   setShowWelcome(true);
-    //   localStorage.setItem('hasSeenWelcome', 'true');
-    // }
+    const hasSeenWelcome = localStorage.getItem('hasSeenWelcome');
+    if (!hasSeenWelcome) {
+      setShowWelcome(true);
+      localStorage.setItem('hasSeenWelcome', 'true');
+    }
   }, []);
 
   return (
